@@ -17,7 +17,7 @@ class App extends Component {
 
   onClick(){
     this.setState({userData:!(this.state.userData)})
-    fetch('/contributors')
+    fetch('https://fishtown-sites-api.herokuapp.com/contributors')
     .then((response) => response.json())
     .then((responseJSON) => {
       this.onFetch(responseJSON)

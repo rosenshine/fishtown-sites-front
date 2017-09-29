@@ -16,7 +16,7 @@ class ReadingsForm extends Component {
   }
 
   submitReading(){
-    fetch('/contributors', {
+    fetch('https://fishtown-sites-api.herokuapp.com/contributors', {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
